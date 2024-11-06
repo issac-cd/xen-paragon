@@ -1,0 +1,77 @@
+{
+  "name": "@jaaffer/custom-frontend",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jaaffer/custom-frontend.git"
+  },
+  "main": "dist/index.js",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://npm.pkg.github.com."
+  },
+  "dependencies": {
+    "@openedx/frontend-build": "^14.1.2",
+    "@semantic-release/exec": "github:semantic-release/exec",
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^12.1.5",
+    "@testing-library/user-event": "^13.5.0",
+    "react": "^17.0.2",
+    "react-bootstrap": "^1.6.8",
+    "react-dom": "^17.0.2",
+    "react-scripts": "5.0.1",
+    "sass": "^1.51.0",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "make build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "files": [
+    "/dist",
+    "/scss",
+    "/src"
+  ],
+  "release": {
+    "branches": [
+      {
+        "name": "develop"
+      }
+    ],
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
+      "@semantic-release/npm",
+      [
+        "@semantic-release/exec",
+        {
+          "publishCmd": "echo \"NEXT_RELEASE_VERSION=${nextRelease.version}\" >> $GITHUB_ENV"
+        }
+      ]
+    ]
+  }
+}
