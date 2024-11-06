@@ -1,13 +1,13 @@
 {
-  "name": "@jaaffer/custom-frontend",
+  "name": "@crystaldelta/xen-paragon",
   "version": "1.0.0",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Jaaffer/custom-frontend.git"
+    "url": "git+https://github.com/crystaldelta/xen-paragon"
   },
   "main": "dist/index.js",
   "publishConfig": {
-    "access": "public",
+    "access": "restricted",
     "registry": "https://npm.pkg.github.com."
   },
   "dependencies": {
@@ -59,7 +59,11 @@
   "release": {
     "branches": [
       {
-        "name": "develop"
+        "name": "develop",
+        "prerelease": "alpha"
+      },
+      {
+        "name": "master"
       }
     ],
     "plugins": [
