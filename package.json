@@ -13,10 +13,6 @@
   "dependencies": {
     "@openedx/frontend-build": "^14.1.2",
     "@semantic-release/exec": "github:semantic-release/exec",
-    "@testing-library/jest-dom": "^5.17.0",
-    "@testing-library/react": "^12.1.5",
-    "@testing-library/user-event": "^13.5.0",
-    "nodemon": "^3.1.7",
     "react": "^17.0.2",
     "react-bootstrap": "^1.6.8",
     "react-dom": "^17.0.2",
@@ -29,9 +25,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "make build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "watch": "nodemon -w src -e js,jsx,ts,tsx --exec 'make watch'"
+    "test": "jest",
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
@@ -81,5 +76,16 @@
         }
       ]
     ]
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.26.0",
+    "@babel/preset-react": "^7.25.9",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^12.1.5",
+    "@testing-library/user-event": "^13.5.0",
+    "babel-jest": "^29.7.0",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
+    "jest-transform-stub": "^2.0.0"
   }
 }
