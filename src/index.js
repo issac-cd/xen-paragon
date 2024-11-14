@@ -1,1 +1,1 @@
-export {default as BasicExample} from './Card/card';
+export {default as FetchStyleSheetComponent } from './stylesheet/stylesheet';
