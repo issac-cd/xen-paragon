@@ -1,9 +1,9 @@
 {
-  "name": "@crystaldelta/xen-paragon",
+  "name": "@issac-cd/xen-paragon",
   "version": "1.0.0",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/crystaldelta/xen-paragon"
+    "url": "git+https://github.com/issac-cd/xen-paragon"
   },
   "main": "dist/index.js",
   "publishConfig": {
