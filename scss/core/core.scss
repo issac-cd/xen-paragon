@@ -1,1 +1,8 @@
-@import "mixin.scss";
+@import '../base/colors';
+@import '../base/variables';
+@import '../base/mixins';
+@import '../base/media';
+@import '../base/common';
+
+
+@import '../../src/index';

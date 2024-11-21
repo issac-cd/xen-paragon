@@ -1,0 +1,10 @@
+{
+  "watch": [
+    "src",
+    "scss"
+  ],
+  "env": {
+    "NODE_ENV": "development"
+  },
+  "ext": "js,jsx,ts,tsx,scss"
+}

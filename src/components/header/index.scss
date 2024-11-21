@@ -1,0 +1,217 @@
+
+.xen-header.learning-header,
+.xen-header.studio-header {
+  z-index: 1;
+  height: unset;
+
+  .d-no {
+    display: none !important;
+  }
+
+  .top-bar {
+    background: $violet-shade-1;
+    font-size: '10px';
+    height: 30px;
+    padding: 0 48px;
+
+    @include for-phone-only {
+      padding-right: 25px;
+    }
+
+    @include for-tablet {
+      padding-right: 30px;
+    }
+
+    img {
+      @include box(10px, 10px);
+    }
+  }
+
+  .nav-bar {
+    padding: 0 48px;
+
+    .navbar-collapse {
+      transition: all 0.5s ease-in-out !important;
+    }
+
+    @include for-phone-only {
+      padding: 0 15px;
+    }
+
+    @include for-tablet {
+      padding: 0 30px;
+    }
+
+    .nav-item {
+      padding: 16px !important;
+      @include font-set(16px, 20px, -0.02em, var(--font-primary-regular));
+      text-decoration: none;
+      a {
+        color: $xen-dark-grey;
+        text-decoration: none;
+      }
+      &.active {
+        border-bottom: 4px solid $violet-shade-1;
+      }
+  
+      @media (min-width: 320px) and (max-width: 1199.98px) {
+        padding: 10px !important;
+      }
+    }
+
+    .navbar-right {
+      .nav-item:last-child {
+        padding-right: 0 !important;
+      }
+    }
+
+    .tabs {
+      .tab {
+        border-bottom: 3px solid $xen-grey-pale2;
+        a {
+          color: unset;
+          @include font-set(16px, 20px, normal, var(--font-primary-regular));
+          padding: 10px 15px 13px 15px;
+          display: block;
+          text-align: center;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  .menu-toggle-icon {
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-color: transparent;
+    outline: unset;
+    @include box (24px, 24px);
+  }
+
+  .collapse:not(.show) {
+    display: none !important;
+  }
+
+  .header-banner {
+    height: 180px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: right;
+    background-position-y: top;
+
+    &.banner-color {
+      background-color: var(--organization-primary);
+    }
+
+    .header-logo-image {
+      height: 50px;
+      margin: 15px 0 0 50px;
+
+      @include for-tablet-portrait {
+        margin: 30px 0 0 20px;
+        height: 34px;
+      }
+    }
+
+    .create-space {
+      display: inline;
+      @include position-absolute(101px, 50px);
+      z-index: 11;
+      color: $white;
+      border: 2px solid;
+      border-radius: 26px;
+      cursor: pointer;
+      @include font-set(16px, 24px, normal, var(--font-primary-regular));
+
+      @include for-phone-only {
+        display: none;
+      }
+
+      @include for-tablet {
+        right: 46px;
+        top: 92px;
+      }
+
+      .create-space-modal {
+        padding: 11px 18px 11px 14px;
+        p {
+          color: $white;
+        }
+      }
+    }
+  }
+
+  .main-bar {
+    padding: 20px;
+    text-align: left;
+    position: relative;
+    min-height: 160px;
+
+    &.banner-color {
+      background-color: var(--organization-primary);
+    }
+
+    h1 {
+      color: $white;
+      @include font-set-partial(22px, 40px);
+      letter-spacing: -0.02em;
+      cursor: pointer;
+    }
+
+    .studio-nav {
+      @include position-absolute(auto, auto, 0, 0);
+      width: 100%;
+      a {
+        color: $white;
+      }
+    }
+  }
+
+  .studio-nav {
+    backdrop-filter: blur(4px);
+    background: $black-rgba-2;
+    
+    .home-icon {
+      width: 18px;
+    }
+
+    .settings-icon {
+      font-size: 18px;
+      img {
+        height: 24px;
+      }
+    }
+
+    .navbar-nav {
+      flex-direction: column;
+      position: absolute;
+      width: 100%;
+      z-index: 10;
+    }
+
+    .nav-item {
+      background: $grey-shade-1;
+      border-bottom: 1px solid $grey-shade-30;
+      a {
+        color: $white;
+        @include font-set(16px, 19px, 0.25px, var(--font-primary-regular));
+        font-weight: 500;
+      }
+    }
+
+
+    a {
+      color: $black;
+      text-decoration: none;
+      margin: 0 10px;
+
+      @include for-tablet {
+        font-size: 12px;
+      }
+
+      &.active {
+        border-bottom: 1px solid $white;
+      }
+    }
+  }
+}

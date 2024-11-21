@@ -6,10 +6,23 @@ build:
 	@rm -rf dist/**/__snapshots__
 	@rm -rf dist/__mocks__
 
-
 watch:
 	make build
+
 	mkdir -p ../frontend-app-learner-dashboard/node_modules/@crystaldelta/xen-paragon
 	rm -rf ../frontend-app-learner-dashboard/node_modules/@crystaldelta/xen-paragon/dist
-	mv dist ../frontend-app-learner-dashboard/node_modules/@crystaldelta/xen-paragon
-	tutor dev restart learner-dashboard
+	cp -r dist ../frontend-app-learner-dashboard/node_modules/@crystaldelta/xen-paragon
+	rm -rf ../frontend-app-learner-dashboard/node_modules/@crystaldelta/xen-paragon/src
+	cp -r src ../frontend-app-learner-dashboard/node_modules/@crystaldelta/xen-paragon
+	rm -rf ../frontend-app-learner-dashboard/node_modules/@crystaldelta/xen-paragon/scss
+	cp -r scss ../frontend-app-learner-dashboard/node_modules/@crystaldelta/xen-paragon
+
+	mkdir -p ../frontend-app-learning/node_modules/@crystaldelta/xen-paragon
+	rm -rf ../frontend-app-learning/node_modules/@crystaldelta/xen-paragon/dist
+	cp -r dist ../frontend-app-learning/node_modules/@crystaldelta/xen-paragon
+	rm -rf ../frontend-app-learning/node_modules/@crystaldelta/xen-paragon/src
+	cp -r src ../frontend-app-learning/node_modules/@crystaldelta/xen-paragon
+	rm -rf ../frontend-app-learning/node_modules/@crystaldelta/xen-paragon/scss
+	cp -r scss ../frontend-app-learning/node_modules/@crystaldelta/xen-paragon
+
+	tutor dev restart learning learner-dashboard

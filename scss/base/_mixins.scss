@@ -1,0 +1,131 @@
+@mixin font-set($font-size, $line-height, $letter-spacing, $font-family) {
+  font-size: $font-size;
+  line-height: $line-height;
+  letter-spacing: $letter-spacing;
+  font-family: $font-family;
+};
+
+@mixin flex() {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+};
+
+@mixin phone-width {
+  @include for-phone-only {
+    width: 100%
+  }
+
+  @include for-tablet-portrait {
+    width: 100%
+  }
+};
+
+@mixin custom-screen($min-width, $max-width) {
+  @media (min-width: $min-width) and (max-width:$max-width) {
+    @content
+  }
+};
+
+@mixin position-absolute($top: auto, $right: auto, $bottom: auto, $left: auto) {
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+  position: absolute;
+};
+
+@mixin box($width:auto, $height:auto) {
+  width: $width;
+  height: $height;
+}
+
+@mixin text-truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@mixin resp-font-size($lg, $md, $md-sm, $sm, $xs, $unit: rem, $lh: false) {
+  @include for-desktop-lg {
+    font-size: $lg + $unit;
+    @if ($lh == true){
+      line-height: 1.2;
+    }
+  }
+
+  @include for-desktop-md {
+    font-size: $md + $unit;
+    @if ($lh == true){
+      line-height: 1.1;
+    }
+  }
+
+  @include for-tablet-landscape {
+    font-size: $md-sm + $unit;
+    @if ($lh == true){
+      line-height: 1.1;
+    }
+  }
+
+  @include for-tablet-portrait {
+    font-size: $sm + $unit;
+    @if ($lh == true){
+      line-height: 1;
+    }
+  }
+
+  @include for-phone-only {
+    font-size: $xs + $unit;
+    @if ($lh == true){
+      line-height: 1;
+    }
+  }
+}
+
+@mixin resp-max-width($lg, $md, $md-sm, $sm, $xs, $unit:px) {
+  @include for-desktop-lg {
+    max-width: $lg + $unit;
+  }
+
+  @include for-desktop-md {
+    max-width: $md + $unit;
+  }
+
+  @include for-tablet-landscape {
+    max-width: $md-sm + $unit;
+  }
+
+  @include for-tablet-portrait {
+    max-width: $sm + $unit;
+  }
+
+  @include for-phone-only {
+    max-width: $xs + $unit;
+  }
+}
+
+@mixin font-set($font-size, $line-height, $letter-spacing, $font-family) {
+  font-size: $font-size;
+  line-height: $line-height;
+  letter-spacing: $letter-spacing;
+  font-family: $font-family;
+}
+
+@mixin font-set-partial($font-size1, $line-height1){
+  font-size: $font-size1;
+  line-height: $line-height1;
+}
+
+@mixin margin-x($left, $right) {
+  margin-left: $left;
+  margin-right: $right;
+}
+
+@mixin margin-y($top, $bottom) {
+  margin-top: $top;
+  margin-bottom: $bottom;
+}
+

@@ -1,0 +1,312 @@
+//Colors
+
+// Basic Colors
+$black: #000000;
+$white: #FFFFFF;
+
+//Primary Colors
+$header-top-section-bg: #1B1D1C;
+$header-top-section-font-primary: #EBEBEB;
+$footer-font-header-primary: $white;
+$footer-font-primary: #D8D8D8;
+$footer-privacy: #D8D8D8;
+$footer-froged-hint: $white;
+$table-button-background: #d5f2f5;
+
+// Grey Shades
+$grey-shade-1: rgb(0, 0, 0);
+$grey-shade-2: rgb(236, 236, 236);
+$grey-shade-3: rgb(88, 88, 90);
+$grey-shade-4: rgb(33, 33, 33);
+$grey-shade-5: rgb(151, 151, 151);
+$grey-shade-6: rgb(27, 37, 89);
+$grey-shade-7: rgb(112, 144, 176);
+$grey-shade-8: rgb(76, 91, 106);
+$grey-shade-9: rgb(69, 137, 96);
+$grey-shade-10: rgb(20, 23, 38);
+$grey-shade-11: rgb(137, 146, 169);
+$grey-shade-12: rgb(19, 10, 46);
+$grey-shade-13: rgb(237, 237, 237);
+$grey-shade-14: rgb(255, 255, 255);
+$grey-shade-15: rgb(244, 245, 247);
+$grey-shade-16: rgba(20, 23, 38, 0.02);
+$grey-shade-17: rgba(2, 41, 100, 0.4);
+$grey-shade-18: rgba(0, 0, 0, 0.08);
+$grey-shade-19: rgb(159, 159, 159);
+$grey-shade-20: rgb(245, 245, 245);
+$grey-shade-21: rgba(255, 255, 255, 0.01);
+$grey-shade-22: rgb(227, 227, 227);
+$grey-shade-23: rgb(128,128,128);
+$grey-shade-24: #AAAAAA;
+$grey-black-shade-1: rgba(0, 0, 0, 0.04);
+$grey-black-shade-2: rgba(0, 0, 0, 0.1);
+$grey-black-shade-3: rgba(0,0,0,0.12);
+$grey-black-shade-4: rgba(112, 144, 176, 0.12);
+$grey-platinum: #E3E3E3;
+$grey-outer-space: #454444;
+$grey-shade-25: rgba(255, 255, 255, 0.8);
+$grey-shade-26: rgba(255, 255, 255, 0.2);
+$grey-shade-27: rgba(229, 229, 229, 0.75);
+$grey-shade-28: #555770;
+$grey-shade-29: #C7C9D9;
+$grey-shade-30: #DADBDA;
+$grey-shade-31: #9E9F9E;
+$grey-shade-32: rgba(158, 159, 158, 0.1);
+$grey-shade-33: #F8FBFF;
+$grey-shade-34: #A0A0A0;
+$grey-shade-35: #E5E8EE;
+$grey-shade-36: #eaeaea;
+$grey-shade-37: #E9ECEF;
+$grey-shade-38: #fbfbfb;
+$grey-shade-39: rgba(88, 88, 90, 0.35);
+$grey-shade-40: #00001a;
+$grey-shade-41: #818E98;
+$grey-shade-42: rgba(88, 88, 90, 0.50);
+$grey-shade-43: rgba(0, 0, 0, 0.25);
+$grey-shade-44: rgba(0, 0, 0, 0.5);
+$grey-shade-45: #CECDD1;
+$grey-shade-46: #565758;
+$grey-shade-47: #F3F2F7;
+$grey-shade-48: #e3e2e9;
+$grey-shade-49: rgba(0, 0, 0, 0.10);
+$grey-shade-50: #818181;
+$grey-shade-51: #C3C4C9;
+$grey-shade-52: #ccccfc;
+$grey-shade-53: rgba(137, 146, 169, 0.2);
+$grey-shade-54: #F4F4F4;
+$grey-shade-55: #E6E8EC;
+$grey-black-shade-56: rgba(130, 130, 130, 1);
+$grey-shade-57: #191919;
+$grey-shade-58: #A0A2A0;
+$grey-shade-59: rgb(88, 88, 90);
+$grey-shade-60: #DBDBDB;
+$grey-shade-61: #bdbdbd;
+$grey-shade-62: rgba(50, 50, 71, 0.05);
+$grey-shade-63: rgba(12, 26, 75, 0.24);
+$grey-shade-64: #425466;
+$grey-shade-65: #959595;
+$grey-shade-66: #989898;
+$grey-shade-67: #C7CCE1;
+// Red Shades
+$red-shade-1: rgb(172, 48, 24);
+$red-shade-2: rgba(172, 48, 24, 0.1);
+$warning-red: rgb(255, 0, 0);
+$red-shade-3: #B94A48;
+$red-shade-4: #F2DEDE;
+$red-shade-5: #EA5455;
+$red-shade-6: #FFC7C7;
+$red-shade-7: rgb(208, 18, 18);
+$red-shade-8: #D01212;
+$red-shade-9: #FD8987;
+
+// Blue Shades
+$blue-shade-1: rgb(0, 181, 204);
+$blue-shade-2: #0075b4;
+$blue-shade-3: #64C5DD;
+$blue-shade-4: #EAF4FD;
+$blue-shade-5: #28293D;
+$blue-shade-7: #03C7E8;
+$blue-shade-8: #225685;
+$blue-shade-9: rgba(0, 175, 170, 0.0001);
+$blue-shade-10: rgb(112, 141, 176);
+$blue-shade-11: rgb(34, 86, 133);
+$blue-shade-12: rgba(34, 86, 133, 0.05);
+
+//black Shades
+$black-shade-1: #1A1A1A;
+$black-shade-2: #555555;
+$black-shade-3: #121212;
+$black-shade-4: #27272E;
+$black-shade-5: rgba(31, 38, 51, 1);
+$black-shade-6: rgba(20, 23, 38, 0.12);
+$blue-shade-13: rgba(34, 86, 133, 0.1);
+$blue-shade-14: #3B3F5C;
+$blue-shade-15: #D3DAE233;
+$blue-shade-16: rgb(34, 86, 133);
+$blue-shade-17: rgb(34, 86, 133);
+$blue-shade-18: #104D75;
+$blue-shade-19: #0009DC;
+
+
+
+//Xen Colors
+$xen-grey: #414042;
+$extra-dark-grey: #3D4043;
+$xen-dark-grey: #58585A;
+$xen-dark-grey1: #676667;
+$xen-dark-grey2: #181C25;
+$xen-dark-grey3: #7e7e7e;
+$xen-dark-grey4: #676666;
+$xen-dark-grey5: #929292;
+$xen-dark-grey6: #3A3A3A;
+$xen-dark-grey7: #8A8A8A;
+$xen-dark-grey8: #9F9F9F;
+
+$xen-light-grey: #ECECEC;
+$xen-light-grey1: #F9F9FA;
+$xen-light-grey4: #8E9BBA;
+$xen-light-grey5: #ADB0B8;
+$xen-light-grey6: #dcdcdc;
+$xen-light-grey7: #ACB4BD;
+$xen-light-grey8: #979797;
+$xen-light-grey9: #ADB5BD;
+$xen-light-grey10: #E8E8E9;
+$xen-light-grey11: #C4C8D4;
+$xen-light-grey12: #CCD2E3;
+$xen-light-grey13: #f5f5f5;
+$xen-light-grey14: #C4C4C4;
+$xen-light-grey15: #d2d0d0;
+$xen-light-grey16: #f2f3f3;
+$xen-light-grey17: #8890AA;
+$xen-light-grey18: #E0E0E0;
+
+$xen-grey-pale: #ABABAB;
+$xen-grey-pale1: #E7E7E7;
+$xen-grey-pale2: #EEF2F5;
+$xen-grey-pale3: #979797;
+$xen-grey-pale4: #8D92AC;
+$xen-grey-pale5: #D8D8D8;
+$xen-grey-pale6: #8992A9;
+$xen-grey-pale7: #cce9ed;
+$xen-grey-pale8: #FAFAFB;
+$xen-grey-pale10: #FDFDFD;
+$xen-grey-pale11: #F4F5F7;
+$xen-grey-pale12: #C4C8D4;
+$xen-grey-pale13: #f5f5f5;
+$xen-grey-pale14: #FAFAFA;
+$xen-grey-pale15: #c0c0c0;
+$xen-grey-pale16: #E8E8E8;
+$xen-grey-pale17: #E8E8E9;
+$xen-grey-pale18: rgba(130, 130, 130, 0.5);
+$xen-grey-pale19: #828282;
+$xen-grey-pale20:#D9D9D9;
+$xen-grey-pale21:#FAFAFB;
+
+
+$xen-blue-grey: #8F9BBA;
+$xen-blue: #1B2559;
+$xen-calendar-black: #1e2b37;
+$xen-red: #e31a1a;
+$xen-light-white-custom: #F8F8F8;
+$progress-green: #458960;
+$xen-light-green: #e0ece5;
+$xen-footer-color: #8d92ac;
+$xen-light-maroon: #f1d6d0;
+$notification-red: #C83254;
+$notification-red1: #D23228;
+$error-red: #A11E20;
+$error-red1: #921108;
+$caution-red: #AC3018;
+$info-blue: #00B5CC;
+$xen-progress: #FF8C0F;
+
+$user-quota-green: #36C84B;
+$user-quota-green1: #27AA35;
+$user-quota-green2: #30A171;
+$user-quota-orange: #FDBC40;
+$user-quota-orange1: #DE9F34;
+$user-quota-orange2: #FBB321;
+$user-quota-red: #FC5753;
+$user-quota-red1: #DF4744;
+
+//misc
+$text-grey: #696969;
+$text-grey-2: #888da7;
+$concrete-grey: #f2f2f3;
+$shade-grey: #f3f3f3;
+$dark-blue-grey: #282352;
+$dark-blue-grey1: #225685;
+$sky-blue: #79b3e2;
+$smoky: #5c516b;
+$mulled-wine: #494055;
+$mine-shaft: #333333;
+$gray: #808080;
+$lite-gray: #707070;
+$primary-teal: #9f1f4e;
+$primary-teal-light: #f8afb1;
+$light-pink: #d41d40;
+$burnt-orange: #f76c6c;
+$dark-mid-grey: #666666;
+$light-grey: #e2e1e1;
+$dark-black: #212529;
+$dark-black-2: #181C25;
+$light-grey-shade1: rgba(255, 255, 255, 0.06);
+$light-grey-shade2: rgb(20,23,38);
+
+
+//components
+$anchor-color: #7c6f91;
+$anchor-visited: #5d536c;
+$alert-danger: #721c24;
+
+//Datatable
+$datatable-border: #C2C9D1;
+$datatable-border-2: #F0F2F3;
+$thead: #7e7e7e;
+$input-fill: #fcfcfc;
+$active-green: #3cc13b;
+$active-lighter: #effdff;
+$calendar-grey: #19181a;
+$focus-fill: #f8f7fa;
+$boxshadow-color: #797a7d;
+
+// SAAS Settings tab colors
+$help-text-grey: #B6B7BB;
+$help-text-grey-dark: #58585A;
+$scroll-bar-grey: #858585;
+$scroll-bar-grey1: #545454;
+$publish-bg-grey: #ccc;
+$drafts-font-saffron: #EE8000;
+$drafts-bg-saffron: #FFDC98;
+$drafts-border-left-saffron: #EE8100;
+$saas-light-grey1:#F5F0FE;
+$saas-black1:#1C1B1F;
+
+//studio colors
+$mercury-grey: #E5E5E5;
+$studio-white-grey1: #F1F1F1;
+$studio-grey: #BDBFC0;
+$studio-dark-charcoal: #313131;
+$studio-quartz: #4C4C4C;
+$studio-davys-grey: #585858;
+$studio-cyan-blue: #367EC4;
+$studio-azure: #ECFCF9;
+
+$dark-black-3: #282C2E;
+$bright-gray: #EEE9E7;
+
+$black-rgba: rgba(0, 0, 0, 0);
+$black-rgba-1: rgba(25, 25, 25, 1);
+$black-rgba-2: rgba(0, 0, 0, 0.15);
+
+$blue-shade-5: #6c97be;
+$blue-shade-6: #f3f8fc;
+$green-shade-1: #328754;
+$green-shade-2: #CAFCDE;
+$green-shade-3: #00AB9C;
+$green-shade-4: #BCECC3;
+$green-shade-5: #08544D;
+$green-shade-6: #1DB3A3;
+$white-shade-1: #F5FAFF;
+$white-shade-2: #F0F0F0;
+$white-shade-3: #F2F2F2;
+$white-shade-4: #F9F9F9;
+$yellow-shade-1: #FFD333;
+$yellow-shade-2: #fef0d3;
+$yellow-shade-3: #efc266;
+$yellow-shade-4: #e59a00;
+$yellow-shade-5: #FFC800;
+$yellow-shade-6: #fffbf2;
+$yellow-shade-7: #DBFF66;
+$blue-shade-11: rgba(112, 141, 176, 0.12);
+$blue-shade-12: #f1f8ff;
+
+$orange-shade-1: #E5511F;
+$orange-shade-2: #fd7e14;
+$orange-shade-3: #E8953D;
+$orange-shade-4: rgb(244, 126, 45);
+
+$green-shade-1: #0d7d4d;
+$violet-shade-1:#4D0461;
+$violet-shade-2: rgba(153, 51, 255, 0.1);
+$violet-shade-3: #4D065F;

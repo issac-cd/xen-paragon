@@ -1,0 +1,41 @@
+@mixin for-phone-only{
+  @media (min-width : $phone-small) and (max-width: $phone-only) {
+    @content;
+  }
+}
+
+@mixin for-tablet {
+  @media (min-width: $phone-only) and (max-width: $tablet-land) {
+    @content;
+  }
+}
+
+@mixin for-tablet-portrait{
+  @media (min-width : $phone-only) and (max-width: $tablet-port) {
+    @content;
+  }
+}
+
+@mixin for-tablet-landscape{
+  @media (min-width : $tablet-port) and (max-width: $tablet-land) {
+    @content;
+  }
+}
+
+@mixin for-desktop-md{
+  @media (min-width : $tablet-land) and (max-width: $desktop-md){
+    @content;
+  }
+}
+
+@mixin for-desktop-lg{
+  @media (min-width: $desktop-lg-up){
+    @content;
+  }
+}
+
+@mixin for-ipad-only {
+  @media (min-width : $ipad) and (max-width: $ipad-pro) {
+    @content;
+  }
+}
