@@ -38,7 +38,7 @@ jobs:
     - name: Notify Slack
       uses: rtCamp/action-slack-notify@v2
       with:
-        text: "Package `@crystaldelta/xen-paragin` successfully published! Version: `${{ env.NEXT_RELEASE_VERSION }}`"
+        text: "Package `@crystaldelta/xen-paragon` successfully published! Version: `${{ env.NEXT_RELEASE_VERSION }}`"
       env:
         SLACK_USERNAME: GitHub NPM
         SLACK_ICON: https://stg-xenops-s3-icons.s3.ap-southeast-2.amazonaws.com/github.png

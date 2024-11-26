@@ -23,7 +23,7 @@ const Header = () => {
       >
         <img className="header-logo-image" src={getSiteConfig('header_logo')} alt="Header logo" />
 
-        {authenticatedUser.userId && <div className="create-space">
+        {authenticatedUser && <div className="create-space">
           <a data-toggle="modal" data-target="#createSpaceModal" className="d-flex create-space-modal">
             <img src={addIcon} />
             <p className="create-space-text pl-2">Create Space</p>
