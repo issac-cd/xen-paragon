@@ -17,12 +17,12 @@ watch:
 	rm -rf ../frontend-app-learner-dashboard/node_modules/@crystaldelta/xen-paragon/scss
 	cp -r scss ../frontend-app-learner-dashboard/node_modules/@crystaldelta/xen-paragon
 
-	mkdir -p ../frontend-app-learning/node_modules/@crystaldelta/xen-paragon
-	rm -rf ../frontend-app-learning/node_modules/@crystaldelta/xen-paragon/dist
-	cp -r dist ../frontend-app-learning/node_modules/@crystaldelta/xen-paragon
-	rm -rf ../frontend-app-learning/node_modules/@crystaldelta/xen-paragon/src
-	cp -r src ../frontend-app-learning/node_modules/@crystaldelta/xen-paragon
-	rm -rf ../frontend-app-learning/node_modules/@crystaldelta/xen-paragon/scss
-	cp -r scss ../frontend-app-learning/node_modules/@crystaldelta/xen-paragon
+	mkdir -p ../frontend-app-authn/node_modules/@crystaldelta/xen-paragon
+	rm -rf ../frontend-app-authn/node_modules/@crystaldelta/xen-paragon/dist
+	cp -r dist ../frontend-app-authn/node_modules/@crystaldelta/xen-paragon
+	rm -rf ../frontend-app-authn/node_modules/@crystaldelta/xen-paragon/src
+	cp -r src ../frontend-app-authn/node_modules/@crystaldelta/xen-paragon
+	rm -rf ../frontend-app-authn/node_modules/@crystaldelta/xen-paragon/scss
+	cp -r scss ../frontend-app-authn/node_modules/@crystaldelta/xen-paragon
 
-	tutor dev restart learning learner-dashboard
+	tutor dev restart authn learner-dashboard

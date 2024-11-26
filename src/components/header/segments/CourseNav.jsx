@@ -46,7 +46,7 @@ const CourseNav = () => {
     },
     { 
       name: getSiteConfig('profile_text') || formatMessage(messages.profile),
-      url: `${getSiteConfig('ACCOUNT_PROFILE_URL')}/u/${authenticatedUser.username}`,
+      url: `${getSiteConfig('ACCOUNT_PROFILE_URL')}/u/${authenticatedUser?.username}`,
       classes: `${getSiteConfig('SHOW_PROFILE') ? '' : 'd-no'}`
     },
     { 
@@ -95,7 +95,7 @@ const CourseNav = () => {
     },
     { 
       name: getSiteConfig('profile_text') || formatMessage(messages.profile),
-      url: `profile/u/${authenticatedUser.username}`,
+      url: `profile/u/${authenticatedUser?.username}`,
       classes: `${getSiteConfig('SHOW_PROFILE') ? '' : 'd-no'}`
     },
     {
@@ -111,10 +111,10 @@ const CourseNav = () => {
         <nav className="navbar navbar-light navbar-expand-lg w-100 p-0 m-0 d-md-block d-none">								
           <ul className="d-flex header-authenticated w-100 pl-0 mb-0">
             <div className="d-flex justify-content-start w-50 h-100">
-              {authenticatedUser.userId && navBarLeft.map((navItem, index) => <CourseNavItem key={`course-nav-left-${index}`} navItem={navItem} />)}
+              {authenticatedUser && navBarLeft.map((navItem, index) => <CourseNavItem key={`course-nav-left-${index}`} navItem={navItem} />)}
             </div>
             <div className="d-flex justify-content-end w-50 h-100 navbar-right">
-              {(authenticatedUser.userId ? navBarRight : noAuthNav).map((navItem, index) => (
+              {(authenticatedUser ? navBarRight : noAuthNav).map((navItem, index) => (
                 <CourseNavItem key={`course-nav-right-${index}`} navItem={navItem} />)
               )}
             </div>
@@ -123,7 +123,7 @@ const CourseNav = () => {
         
         <nav className="navbar pb-0 navbar-expand-md p-0 mx-md-3 mx-lg-5 pt-md-4 mb-md-4 d-md-none d-block w-100">
 
-          {authenticatedUser.userId ? <div className="d-flex d-md-none align-items-center justify-content-between w-100">
+          {authenticatedUser ? <div className="d-flex d-md-none align-items-center justify-content-between w-100">
             <p className="nav-item active m-0">
               {mobileNav.filter(x => x.active).map(navItem => (
                 <a className="help-menu-item" href={navItem.url} key='mobile-nav-active-item'>
